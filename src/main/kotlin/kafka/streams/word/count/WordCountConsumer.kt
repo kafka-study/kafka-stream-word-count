@@ -3,9 +3,9 @@ import org.apache.kafka.common.serialization.Serdes
 import org.apache.kafka.streams.KafkaStreams
 import org.apache.kafka.streams.StreamsConfig
 import org.apache.kafka.streams.kstream.KStreamBuilder
-import java.util.*
+import java.util.Properties
 
-    fun main(args: Array<String>){
+fun main(args: Array<String>){
 
         val config = Properties()
         config[StreamsConfig.APPLICATION_ID_CONFIG] = "wordcount-application"
